@@ -13,7 +13,6 @@ let secondCard = randomNumber()
 let sum = firstCard + secondCard
 let all_cards = [firstCard, secondCard]
 let isAlive = false
-let hasBlackJack = false
 let player = {
   name: 'George',
   chips: 145
@@ -53,8 +52,8 @@ function renderGame() {
     for (let i = 0; i < all_cards.length; i++) {
       cards.textContent += all_cards[i] + ' '
     }
-    hasBlackJack = true
-    player.chips = 5
+    isAlive = false
+    player.chips = 50000
     player_el.textContent = player.name + ': $' + player.chips
   }
 
