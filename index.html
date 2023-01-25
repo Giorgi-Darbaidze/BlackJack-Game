@@ -1,25 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Test Web</title>
-</head>
-<body>
+<html>
+  <head>
+    <title>Pets Shop</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
 
+  <main>
+    <h1>Blackjack</h1>
+    <p id="message-el">Want to play a round?</p>
+    <p>Cards: <span id="card"></span></p>
+    <p>Sum: <span id="sum"></span></p>
 
-<h1>People Entered:</h1>
-    <h1 id="count">0</h1>
-
-    <div class="box">
-        <button id="btn">Add</button>
-        <button id="save">Save</button>
+    <div class="block">
+      <button id="btn">START GAME</button>
+      <button id="btn2">NEW CARD</button>
     </div>
+    <p id="player_el"></p>
+  </main>
 
-<h2>Previous entries: <span id="log"></span></h2>
 
-<script src='/index.js'></script>
-</body>
+
+    <script src="index.js"></script>
+  </body>
 </html>
